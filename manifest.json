@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "AccessURL for Google Chrome"
+   },
+   "content_security_policy": "default-src 'self'; script-src 'self' https://accessurl.com https://www.accessurl.com http://localhost:3000 https://localhost:3000 http://localhost:4000 https://localhost:4000 'unsafe-eval'; connect-src https://accessurl.com https://wwww.accessurl.com http://localhost:3000 https://localhost:3000 http://localhost:4000 https://localhost:4000; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:;",
+   "description": "Share access to websites without giving away your username and password. Share access with an Access URL instead.",
+   "externally_connectable": {
+      "matches": [ "https://accessurl.com/*/*", "https://accessurl.com/*", "https://www.accessurl.com/*/*", "https://www.accessurl.com/*" ]
+   },
+   "icons": {
+      "128": "img/icon-128.png",
+      "16": "img/icon-16.png",
+      "48": "img/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApxbXyIPzSpbjHlIUsvCHPC9VxDZ55rPKh5owsLwGPtboLLdoiS+4BMkPpXOgn/HgyRwyy5xiapK8d0ZSUM5b0egdjiR4YNHE5+DyuSrcPlf0RDIotL0jPuGfyZw25bPzaWWqgBorfPqRcICZrcgTpsv7BfT9wzPAcZ1Z2rvTc/6CszCUVVcwvkC3vbDtyPEYpU8b5anJPAGy9x+C9hGCUmioMK7d4sRYE2iYFdgjAHeDvRT85cbnXVUg5QrGFQlj9bdENgHSiia0AJP8DvqpLGdk172Nn4xX1K1XArHZ73Nt4UMY3edpTUuca0bHvA/v6k+8OBpftF8zC6SRJ4fODQIDAQAB",
+   "manifest_version": 2,
+   "name": "AccessURL",
+   "permissions": [ "tabs", "storage", "\u003Call_urls>", "cookies", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}
